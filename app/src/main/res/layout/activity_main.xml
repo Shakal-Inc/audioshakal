@@ -24,28 +24,29 @@
 
                 <Button
                     android:id="@+id/btnFileOpen"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="OnOpenFileClick"
                     android:text="Выбрать файл" />
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn16bit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="16 бит" />
 
                 <Button
                     android:id="@+id/btn32bit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:text="32 бита" />
             </LinearLayout>
@@ -53,6 +54,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="46dp"
+                    android:layout_height="51dp"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/play" />
+
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="223dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
