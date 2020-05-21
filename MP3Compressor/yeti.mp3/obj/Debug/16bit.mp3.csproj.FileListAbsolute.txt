@@ -1,0 +1,11 @@
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\bin\Debug\yeti.mp3.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\bin\Debug\yeti.mp3.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\bin\Debug\yeti.mmedia.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\bin\Debug\yeti.mmedia.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\16bit.mp3.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\Yeti.MMedia.Mp3.EditMp3Writer.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\16bit.mp3.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\16bit.mp3.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\16bit.mp3.csproj.CopyComplete
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\yeti.mp3.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mp3\obj\Debug\yeti.mp3.pdb

@@ -1,0 +1,15 @@
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\AudioCompress.exe
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\AudioCompress.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\yeti.mmedia.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\yeti.mp3.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\yeti.mmedia.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\bin\Debug\yeti.mp3.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress(16bit).csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress.About.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress.Config.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress.Form1.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress(16bit).csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress(16bit).csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress(16bit).csproj.CopyComplete
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress.exe
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\AudioCompress\obj\Debug\AudioCompress.pdb

@@ -1,0 +1,9 @@
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\bin\Debug\yeti.mmedia.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\bin\Debug\yeti.mmedia.pdb
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\Yeti.MMedia.EditWaveWriter.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\Yeti.MMedia.EditFormat.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\Yeti.Controls.NumericTextBox.resources
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\16bit.nmedia.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\16bit.nmedia.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\yeti.mmedia.dll
+C:\Users\User\Source\Repos\shakal\MP3Compressor\Backup\yeti.mmedia\obj\Debug\yeti.mmedia.pdb
