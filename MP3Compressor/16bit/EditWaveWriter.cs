@@ -1,15 +1,3 @@
-//
-//
-//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
-//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
-//  PURPOSE. IT CAN BE DISTRIBUTED FREE OF CHARGE AS LONG AS THIS HEADER 
-//  REMAINS UNCHANGED.
-//
-//  Email:  yetiicb@hotmail.com
-//
-//  Copyright (C) 2002-2003 Idael Cardoso. 
-//
 
 using System;
 using System.Collections;
@@ -20,30 +8,22 @@ using System.Windows.Forms;
 
 namespace Yeti.MMedia
 {
-	/// <summary>
-	/// Summary description for EditWaveWriter.
-	/// </summary>
+
 	public class EditWaveWriter : System.Windows.Forms.UserControl, IEditAudioWriterConfig
 	{
     private System.Windows.Forms.GroupBox groupBox1;
     private Yeti.MMedia.EditFormat editFormat1;
-		/// <summary> 
-		/// Required designer variable.
-		/// </summary>
+
 		private System.ComponentModel.Container components = null;
 
 		public EditWaveWriter()
 		{
-			// This call is required by the Windows.Forms Form Designer.
-			InitializeComponent();
 
-			// TODO: Add any initialization after the InitializeComponent call
+			InitializeComponent();
 
 		}
 
-		/// <summary> 
-		/// Clean up any resources being used.
-		/// </summary>
+
 		protected override void Dispose( bool disposing )
 		{
 			if( disposing )

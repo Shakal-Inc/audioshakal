@@ -1,15 +1,3 @@
-//
-//
-//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
-//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
-//  PURPOSE. IT CAN BE DISTRIBUTED FREE OF CHARGE AS LONG AS THIS HEADER 
-//  REMAINS UNCHANGED.
-//
-//  Email:  yetiicb@hotmail.com
-//
-//  Copyright (C) 2002-2003 Idael Cardoso. 
-//
 
 using System;
 using System.Collections;
@@ -22,9 +10,7 @@ using WaveLib;
 
 namespace Yeti.MMedia
 {
-	/// <summary>
-	/// Summary description for EditFormat.
-	/// </summary>
+
 	public class EditFormat : System.Windows.Forms.UserControl, IEditFormat
 	{
     private System.Windows.Forms.ComboBox comboBoxChannels;
@@ -42,14 +28,12 @@ namespace Yeti.MMedia
 
     public EditFormat()
 		{
-			// This call is required by the Windows.Forms Form Designer.
+
 			InitializeComponent();
-      this.Format = new WaveFormat(44100, 16, 2); //Set default values
+      this.Format = new WaveFormat(44100, 16, 2); 
 		}
 
-		/// <summary> 
-		/// Clean up any resources being used.
-		/// </summary>
+
 		protected override void Dispose( bool disposing )
 		{
 			if( disposing )
@@ -276,7 +260,6 @@ namespace Yeti.MMedia
 
     private void textBoxSampleRate_TextChanged(object sender, System.EventArgs e)
     {
-      // TODO: Validate text
       OnConfigChange(EventArgs.Empty);
     }
 

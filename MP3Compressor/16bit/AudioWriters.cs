@@ -1,15 +1,3 @@
-//
-//
-//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
-//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
-//  PURPOSE. IT CAN BE DISTRIBUTED FREE OF CHARGE AS LONG AS THIS HEADER 
-//  REMAINS UNCHANGED.
-//
-//  Email:  yetiicb@hotmail.com
-//
-//  Copyright (C) 2002-2003 Idael Cardoso. 
-//
 
 using System;
 using System.IO;
@@ -53,9 +41,6 @@ namespace Yeti.MMedia
       }
     }
 
-    /// <summary>
-    /// Width of the config control
-    /// </summary>
     public static int ConfigWidth
     {
       get
@@ -68,9 +53,6 @@ namespace Yeti.MMedia
       }
     }
 
-    /// <summary>
-    /// Height of the config control
-    /// </summary>
     public static int ConfigHeight
     {
       get 
@@ -83,10 +65,6 @@ namespace Yeti.MMedia
       }
     }
 
-    /// <summary>
-    /// Optimal size of the buffer used in each write operation to obtain best performance.
-    /// This value must be greater than 0 
-    /// </summary>
     public int OptimalBufferSize
     {
       get

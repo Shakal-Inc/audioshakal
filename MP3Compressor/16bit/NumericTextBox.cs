@@ -1,15 +1,4 @@
-//
-//
-//  THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
-//  KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
-//  IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
-//  PURPOSE. IT CAN BE DISTRIBUTED FREE OF CHARGE AS LONG AS THIS HEADER 
-//  REMAINS UNCHANGED.
-//
-//  Email:  yetiicb@hotmail.com
-//
-//  Copyright (C) 2002-2003 Idael Cardoso. 
-//
+
 
 using System;
 using System.Windows.Forms;
@@ -17,9 +6,7 @@ using System.Globalization;
 
 namespace Yeti.Controls
 {
-	/// <summary>
-	/// Define a TextBox that allow only integer numbers.
-	/// </summary>
+
 	public class NumericTextBox : TextBox
 	{
 		public NumericTextBox()
