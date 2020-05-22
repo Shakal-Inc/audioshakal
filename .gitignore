@@ -1,0 +1,6 @@
+Temp/
+Library/
+ExportedObj/
+obj/
+*.svd
+*.userprefs
