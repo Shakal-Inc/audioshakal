@@ -18,16 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
     private  int  orientation;
     @Override
-    public void onConfigurationChanged(Configuration newConfig)
-    {
+    public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
         orientation = newConfig.orientation;
         setBackgroundImage(newConfig.orientation);
     }
 
-    private void setBackgroundImage(final int orientation)
-    {
+    private void setBackgroundImage(final int orientation) {
         LinearLayout layout;
         layout = (LinearLayout) findViewById(R.id.image_layout);
 
@@ -38,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onResume()
-    {
+    public void onResume() {
         super.onResume();
         setBackgroundImage(orientation);
     }
@@ -74,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
         if(isStoragePermissionGranted()) {
             fileDialog.show();
         }
+
+    }
+
+    public void OnSaveFileClick(View view) {
 
     }
 }
