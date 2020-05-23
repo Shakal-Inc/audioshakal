@@ -16,28 +16,35 @@
             android:id="@+id/image_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/background_portrain_app"
+            android:background="#00е0F0"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    >
 
                     <Button
                         android:id="@+id/btnFileOpen"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
                         android:layout_weight="1"
                         android:onClick="OnOpenFileClick"
-                        android:text="Выбрать файл" />
+                        android:text="Выбрать файл"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/custom_button"
+                        android:layout_margin="7dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -47,17 +54,25 @@
 
                     <Button
                         android:id="@+id/btn16bit"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
                         android:layout_weight="1"
-                        android:text="16 бит" />
+                        android:text="16 бит"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/custom_button"/>
 
                     <Button
                         android:id="@+id/btn32bit"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:layout_width="125dp"
+                        android:layout_height="60dp"
                         android:layout_weight="1"
-                        android:text="32 бита" />
+                        android:text="32 бита"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/custom_button"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -68,15 +83,18 @@
 
                     <ImageButton
                         android:id="@+id/imageButton"
+                        android:layout_margin="7dp"
                         style="@style/Widget.AppCompat.ImageButton"
-                        android:layout_width="46dp"
-                        android:layout_height="51dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_weight="1"
                         android:scaleType="center"
-                        android:src="@drawable/play" />
+                        android:src="@drawable/play"
+                        android:background="@drawable/custom_button"/>
 
                     <SeekBar
                         android:id="@+id/seekBar2"
+                        android:layout_margin="7dp"
                         android:layout_width="223dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -90,11 +108,15 @@
 
                     <Button
                         android:id="@+id/btnFileSave"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
                         android:layout_weight="1"
                         android:onClick="OnSaveFileClick"
-                        android:text="Сохранить файл" />
+                        android:text="Сохранить файл"
+                        android:textSize="20sp"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/custom_button"/>
                 </LinearLayout>
 
             </LinearLayout>
