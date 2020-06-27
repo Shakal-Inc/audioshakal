@@ -176,6 +176,39 @@ namespace Yeti.MMedia.Mp3
 
     public class Bass
     {
+        public bool Enable
+        {
+            get { return _enable; }
+            set
+            {
+                _enable = value;
+                if (value)
+                {
+                    if (!_initialized)
+                    {
+                        var str = (_devicelist.Items[_devicelist.SelectedIndex] as string);
+                        var array = str.Split(' ');
+                        devindex = Convert.ToInt32(array[0]);
+                        bool result = BassWasapi.BASS_WASAPI_Init(devindex, 0, 0, BASSWASAPIInit.BASS_WASAPI_BUFFER, 1f, 0.05f, _process, IntPtr.Zero);
+                        if (!result)
+                        {
+                            var error = Bass.BASS_ErrorGetCode();
+                            MessageBox.Show(error.ToString());
+                        }
+                        else
+                        {
+                            _initialized = true;
+                            _devicelist.IsEnabled = false;
+                        }
+                    }
+                    BassWasapi.BASS_WASAPI_Start();
+                }
+                else BassWasapi.BASS_WASAPI_Stop(true);
+                System.Threading.Thread.Sleep(500);
+                _t.IsEnabled = value;
+            }
+        }
+
         public void BassConvert()
         {
             int ret = BassWasapi.BASS_WASAPI_GetData(_fft, (int)BASSData.BASS_DATA_FFT2048);
@@ -212,7 +245,6 @@ namespace Yeti.MMedia.Mp3
             _r.Value = Utils.HighWord32(level);
             if (level == _lastlevel && level != 0) _hanctr++;
             _lastlevel = level;
-
 
             if (_hanctr > 3)
             {
