@@ -173,4 +173,57 @@ namespace Yeti.MMedia.Mp3
       return new Mp3WriterConfig(m_InputDataFormat, Mp3Config);
     }
   }
+
+    public class Bass
+    {
+        public void BassConvert()
+        {
+            int ret = BassWasapi.BASS_WASAPI_GetData(_fft, (int)BASSData.BASS_DATA_FFT2048);
+            if (ret < 0) return;
+            int x, y;
+            int b0 = 0;
+
+            for (x = 0; x < _lines; x++)
+            {
+                float peak = 0;
+                int b1 = (int)Math.Pow(2, x * 10.0 / (_lines - 1));
+                if (b1 > 1023) b1 = 1023;
+                if (b1 <= b0) b1 = b0 + 1;
+                for (; b0 < b1; b0++)
+                {
+                    if (peak < _fft[1 + b0]) peak = _fft[1 + b0];
+                }
+                y = (int)(Math.Sqrt(peak) * 3 * 255 - 4);
+                if (y > 255) y = 255;
+                if (y < 0) y = 0;
+                _spectrumdata.Add((byte)y);
+            }
+
+            if (DisplayEnable) _spectrum.Set(_spectrumdata);
+            if (Serial != null)
+            {
+                Serial.Write(_spectrumdata.ToArray(), 0, _spectrumdata.Count);
+            }
+            _spectrumdata.Clear();
+
+
+            int level = BassWasapi.BASS_WASAPI_GetLevel();
+            _l.Value = Utils.LowWord32(level);
+            _r.Value = Utils.HighWord32(level);
+            if (level == _lastlevel && level != 0) _hanctr++;
+            _lastlevel = level;
+
+
+            if (_hanctr > 3)
+            {
+                _hanctr = 0;
+                _l.Value = 0;
+                _r.Value = 0;
+                Free();
+                Bass.BASS_Init(0, 44100, BASSInit.BASS_DEVICE_DEFAULT, IntPtr.Zero);
+                _initialized = false;
+                Enable = true;
+            }
+        }
+    }
 }
