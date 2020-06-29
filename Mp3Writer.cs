@@ -5,6 +5,7 @@ using System.IO;
 using Yeti.Lame;
 using Yeti.MMedia;
 using WaveLib;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Yeti.MMedia.Mp3
 {
@@ -174,7 +175,7 @@ namespace Yeti.MMedia.Mp3
     }
   }
 
-    public class Bass
+    public class Wave
     {
         public bool Enable
         {
@@ -208,8 +209,28 @@ namespace Yeti.MMedia.Mp3
                 _t.IsEnabled = value;
             }
         }
+        public WaveInBuffer(IntPtr waveInHandle, int bufferSize, IntPtr userData)
+        {
+            if (waveInHandle == IntPtr.Zero)
+                throw new ArgumentNullException("waveInHandle");
+            if (bufferSize <= 0)
+                throw new ArgumentOutOfRangeException("bufferSize");
 
-        public void BassConvert()
+            _waveInHandle = waveInHandle;
+
+            _buffer = new byte[bufferSize];
+            _bufferHandle = GCHandle.Alloc(_buffer, GCHandleType.Pinned);
+
+            _waveHeader = new WaveHeader
+            {
+                bufferLength = bufferSize,
+                dataBuffer = _bufferHandle.AddrOfPinnedObject(),
+                loops = 1,
+                userData = userData
+            };
+            _waveHeaderHandle = GCHandle.Alloc(_waveHeader);
+        }
+        public void WaveConvert()
         {
             int ret = BassWasapi.BASS_WASAPI_GetData(_fft, (int)BASSData.BASS_DATA_FFT2048);
             if (ret < 0) return;
